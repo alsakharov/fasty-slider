@@ -40,7 +40,13 @@
 			$fSlidesNumber++;
 		}
 		//Settling container's height based on main slide height
-		//$(this).css('height', $('.fasty_central').css('height'));
+		var $fMaxHeight = 0;
+		$(this).find('.fasty__slide').each(function(){
+			if ( parseInt($(this).css('height')) > $fMaxHeight ) {
+				$fMaxHeight = parseInt($(this).css('height'));
+			}
+		})
+		$(this).css('height', $fMaxHeight + parseInt($(this).find('.fasty__slide').css('top')));
 		//Hide other slides on init
 		$(this).find('.fasty__slide').each(function(){
 			if ( !$(this).hasClass('fasty_visible') ) {
