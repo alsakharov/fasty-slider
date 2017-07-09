@@ -29,6 +29,7 @@
 	left:50%;
 	transition: transform 0.8s; // <=== Animation speed
 }
+// Normal mode
 .fasty_left {
 	transform: translateX(-90%) scale(0.8);
 	z-index: 1;
@@ -41,6 +42,20 @@
 	transform: translateX(-10%) scale(0.8);
 	z-index: 1;
 }
+// to left mode
 .fasty_toLeft {
 	transform: translateX(-100%);
+}
+// sameSize mode
+.fasty_sS_left {
+	transform: translateX(-151%);
+	z-index: 1;
+}
+.fasty_sS_central {
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.fasty_sS_right {
+	transform: translateX(51%);
+	z-index: 1;
 }

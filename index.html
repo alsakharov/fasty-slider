@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/fasty.min.css">
+	<link rel="stylesheet" href="css/fasty.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,12 +18,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="container">
-    	<div class="any_wrap">
-    		<div class="fasty__slide"></div>
-    		<div class="fasty__slide"></div>
-    		<div class="fasty__slide"></div>
+  <body style="background: #121212">
+    <div class="container text-center">
+    	<h2 class="text-center" style="color:#fff; font-size:5rem">Fasty Slider</h2>
+    	<sub class="text-center" style="color:#fff; font-size:2rem">Fast and Simple</sub>
+    	<div class="fasty" style="margin-top:10rem">
+    		<div class="fasty__slide"><img src="1.jpg" alt="#" class="img-responsive"></div>
+    		<div class="fasty__slide"><img src="2.jpg" alt="#" class="img-responsive"></div>
+    		<div class="fasty__slide"><img src="3.jpg" alt="#" class="img-responsive"></div>
+    		<div class="fasty__slide"><img src="4.jpg" alt="#" class="img-responsive"></div>
+    		<div class="fasty__slide"><img src="5.jpg" alt="#" class="img-responsive"></div>
     	</div>
     </div>
 
@@ -32,13 +36,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/fasty.min.js"></script>
+    <script src="js/fasty.js"></script>
     <script>
     	$(function(){
-    		$('.any_wrap').fasty({
-    			start: 'default',
-    			mode: 'normal'
-    		});
+    		$('.fasty').fasty({
+                mode: 'sameSize'
+            });
     	})
     </script>
   </body>

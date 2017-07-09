@@ -34,3 +34,18 @@
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
+.fasty_sS_left {
+  -webkit-transform: translateX(-151%);
+          transform: translateX(-151%);
+  z-index: 1;
+}
+.fasty_sS_central {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+.fasty_sS_right {
+  -webkit-transform: translateX(51%);
+          transform: translateX(51%);
+  z-index: 1;
+}
